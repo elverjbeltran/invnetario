@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 app.get('/',(req,res)=>{
     res.send('Hello Mister')
-})
+});
 app.use("/api/categorias", categoriasR);
 app.use("/api/productos", productosR);
 app.use("/api/empleados", empleadosR);
